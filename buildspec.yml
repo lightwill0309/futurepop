@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "install" > ins.txt
+  build:
+    commands:
+      - echo "build" > build.txt
+  post_build:
+    commands:
+      - echo "postbuild" > postbuild.txt
+artifacts:
+  type: zip
+  files:
+    - '**/*'
