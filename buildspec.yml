@@ -3,10 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo CODEBUILD_INITIATOR
+      - echo $CODEBUILD_INITIATOR
   build:
     commands:
-      - echo CODEBUILD_INITIATOR
+      - echo $CODEBUILD_INITIATOR
   post_build:
     commands:
       - echo "postbuild" > postbuild.txt
